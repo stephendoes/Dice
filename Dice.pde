@@ -12,17 +12,23 @@ void mousePressed()
 }
 class Die //models one single dice cube
 {
-	//variable declarations here
+	int diceX; int diceY; int numRoll 
 	Die(int x, int y) //constructor
 	{
-		//variable initializations here
+	diceX = x;
+	diceY = y;
+	numRoll = dots; 
 	}
 	void roll()
 	{
-		//your code here
+		if (mousePressed)
+		{
+			dots = (int)(Math.random()*6);
+		}
 	}
 	void show()
 	{
-		//your code here
+		rect(x,y,10,10);
+		
 	}
 }
